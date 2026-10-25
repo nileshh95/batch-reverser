@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState } from 'react';
+﻿import { useEffect, useReducer, useState } from 'react';
 import { Check, Eraser, FileText, Moon, Pencil, Plus, Repeat, Sun, Trash2, Undo2 } from 'lucide-react';
 import { SinglyLinkedList } from './lib/SinglyLinkedList.ts';
 
@@ -98,7 +98,7 @@ export default function App() {
         <section className={card} aria-label="Task manager">
           <div className="flex flex-wrap gap-2">
             <input value={text} onChange={(e) => setText(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && add()}
-              placeholder=   <a className="underline" href="https://github.com/nileshh95/batch-reverser">nileshh95/batch-reverser</a>
+              placeholder="Document name, e.g. Invoice.pdf" aria-label="Document name"
               className="min-w-0 flex-1 rounded-lg border border-slate-200 bg-transparent px-3 py-2 text-sm dark:border-slate-700" />
             <button className={primary} onClick={add}><Plus size={16} />Add Task</button>
           </div>
@@ -210,8 +210,8 @@ export default function App() {
         </section>
 
         <footer className="pb-6 text-center text-xs text-slate-500">
-  Reverse nodes in K-groups: O(n) time, O(1) auxiliary space. GitHub: <a className="underline" href="https://github.com/nileshh95/batch-reverser">nileshh95/batch-reverser</a>
-</footer>
+          Reverse nodes in K-groups: O(n) time, O(1) auxiliary space. GitHub: <a className="underline" href="https://github.com/nileshh95/batch-reverser">nileshh95/batch-reverser</a>
+        </footer>
       </main>
     </div>
   );
